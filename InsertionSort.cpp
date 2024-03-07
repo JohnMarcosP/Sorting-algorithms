@@ -7,7 +7,7 @@
 #include <iostream>
 using namespace std;
 
-// Declarando a função para o Insertion Sort
+// Declaring the function for Insertion Sort
 void Insertion_Sort(int vet[], int N);
 
 int main()
@@ -23,7 +23,7 @@ int main()
 
     Insertion_Sort(vet, N);
 
-    // Imprimindo o vetor ordenado
+// Printing the ordered vector
     for (int i = 0; i < N; i++)
     {
         cout << "a[" << i << "] = " << vet[i] << endl;
@@ -32,18 +32,18 @@ int main()
     return 0;
 }
 
-// Função Insertion Sort
+// Insertion Sort function
 void Insertion_Sort(int vet[], int N)
 {
     int i, j, x;
-    // Percorrer o vetor a partir do segundo elemento
+    // Traverse the vector starting from the second element
     for (i = 1; i < N; i++)
-    { // x -> elemento que será inserido na posição correta
+{ // x -> element that will be inserted in the correct position
         x = vet[i];
-        //índice do elemento anterior a x
+        //index of the element before x
         j = i - 1;
-        //move os elementos maiores que x uma posição à frente
-        // para abrir espaço para a inserção de x na posição correta
+        //move elements greater than x one position forward
+        // to make room for inserting x in the correct position
         while (j >= 0 && vet[j] > x)
         {
             vet[j + 1] = vet[j];
